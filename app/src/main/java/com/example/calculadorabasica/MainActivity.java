@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     public ArrayList<Float> Operacion = new ArrayList<Float>();
     String num;
     Button btNUm0, btNUm1, btNUm2, btNUm3, btNUm4, btNUm5, btNUm6, btNUm7, btNUm8, btNUm9, btAC, btCambiodeSigno, Porcentaje, Divicion, btMultiplicacion, btResta, btSuma, btPunto, btIgual;
-    TextView tvResultado;
+    TextView tvResultado, tvOperacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         btPunto = findViewById(R.id.btPunto);
         btIgual = findViewById(R.id.btIgual);
         tvResultado = findViewById(R.id.tvResultado);
+        tvOperacion = findViewById(R.id.tvOperacion);
 
         btNUm0.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,7 +116,8 @@ public class MainActivity extends AppCompatActivity {
         btAC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText());
+                tvResultado.setText("");
+                tvOperacion.setText("");
 
             }
         });
@@ -124,44 +126,55 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 tvResultado.setText(tvResultado.getText()+"+");
-                Float numero = Float.valueOf(num);
-                //Operacion.add(numero);
             }
         });
 
         Divicion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+"/");
-                Float numero = Float.valueOf(num);
-                //Operacion.add(numero);
+                tvResultado.setText("");
+                tvOperacion.setText(num + "/");
+                num = null;
             }
         });
 
         btMultiplicacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+"*");
-                Float numero = Float.valueOf(num);
-                //Operacion.add(numero);
+                tvResultado.setText("");
+                tvOperacion.setText(num + "*");
+                num = null;
             }
         });
 
         btResta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+"-");
-                Float numero = Float.valueOf(num);
-                //Operacion.add(numero);
+                tvResultado.setText("");
+                tvOperacion.setText(num + "-");
+                num = null;
             }
         });
 
         btSuma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+"+");
-                Float numero = Float.valueOf(num);
-                //Operacion.add(numero);
+                tvResultado.setText("");
+                tvOperacion.setText(num + "+");
+                num = null;
+            }
+        });
+
+        btPunto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+".");
+            }
+        });
+
+        btIgual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
             }
         });
 

@@ -21,11 +21,10 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:text="0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/tvResultado4"
+        android:id="@+id/tvOperacion"
         android:layout_width="396dp"
         android:layout_height="47dp"
         android:layout_margin="5dp"
