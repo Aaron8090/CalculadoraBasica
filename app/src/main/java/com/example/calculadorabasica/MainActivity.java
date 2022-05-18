@@ -11,13 +11,12 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    public ArrayList<Float> Operacion = new ArrayList<Float>();
-    String num = "";
-    Button btNUm0, btNUm1, btNUm2, btNUm3, btNUm4, btNUm5, btNUm6, btNUm7, btNUm8, btNUm9, btAC, btCambiodeSigno, Porcentaje, Divicion, btMultiplicacion, btResta, btSuma, btPunto, btIgual;
+    public Button btNUm0, btNUm1, btNUm2, btNUm3, btNUm4, btNUm5, btNUm6, btNUm7, btNUm8, btNUm9, btAC, btCambiodeSigno, Porcentaje, Divicion, btMultiplicacion, btResta, btSuma, btPunto, btIgual;
     TextView tvResultado, tvOperacion;
     double n1;
-    double total;
-    String opera;
+    double n2;
+    double total = 0;
+    char opera;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,157 +45,131 @@ public class MainActivity extends AppCompatActivity {
         tvResultado = findViewById(R.id.tvResultado);
         tvOperacion = findViewById(R.id.tvOperacion);
 
-        btNUm0.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+"0");
-                num = num + "0";
-            }
-        });
-        btNUm1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+"1");
-                num = num + "1";
-            }
-        });
-        btNUm2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+"2");
-                num = num + "2";
-            }
-        });
-        btNUm3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+"3");
-                num = num + "3";
-            }
-        });
-        btNUm4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+"4");
-                num = num + "4";
-            }
-        });
-        btNUm5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+"5");
-                num = num + "5";
-            }
-        });
-        btNUm6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+"6");
-                num = num + "6";
-            }
-        });
-        btNUm7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+"7");
-                num = num + "7";
-            }
-        });
-        btNUm8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+"8");
-                num = num + "8";
-            }
-        });
-        btNUm9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+"9");
-                num = num + "9";
-            }
-        });
-        btAC.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText("");
-                tvOperacion.setText("");
-                total = 0;
-            }
-        });
-
-        Porcentaje.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+"+");
-            }
-        });
-
-        Divicion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText("");
-                tvOperacion.setText(tvOperacion.getText() + num + "/");
-                num = "";
-            }
-        });
-
-        btMultiplicacion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText("");
-                tvOperacion.setText(tvOperacion.getText() + num + "*");
-                num = "";
-            }
-        });
-
-        btResta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText("");
-                tvOperacion.setText(tvOperacion.getText() + num + "-");
-                num = "";
-            }
-        });
-
-        btSuma.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                opera = "+";
-                tvResultado.setText("");
-                tvOperacion.setText(tvOperacion.getText() + num + "+");
-                if(opera == "+"){
-                    n1 = Double.parseDouble(num);
-                    total = total + n1;
-                }
-                num = "";
-            }
-        });
-
-        btPunto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvResultado.setText(tvResultado.getText()+".");
-                num = num + ".";
-            }
-        });
-
-        btIgual.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(opera == "+"){
-                    n1 = Double.parseDouble(num);
-                    total = total + n1;
-                }
-                tvOperacion.setText(tvOperacion.getText() + num);
-                tvResultado.setText(total + " ");
-            }
-        });
-
     }
 
-    public void Suma(){
-        total = total + n1;
-        }
+    public void btNUM7(View view) {
+        String btn = tvResultado.getText().toString();
+        btn = btn+"7";
+        tvResultado.setText(btn);
+    }
 
+    public void btNUM8(View view) {
+        String btn = tvResultado.getText().toString();
+        btn = btn+"8";
+        tvResultado.setText(btn);
+    }
+
+    public void btNUM9(View view) {
+        String btn = tvResultado.getText().toString();
+        btn = btn+"9";
+        tvResultado.setText(btn);
+    }
+
+    public void btNUM4(View view) {
+        String btn = tvResultado.getText().toString();
+        btn = btn+"4";
+        tvResultado.setText(btn);
+    }
+
+    public void btNUM5(View view) {
+        String btn = tvResultado.getText().toString();
+        btn = btn+"5";
+        tvResultado.setText(btn);
+    }
+
+    public void btNUM6(View view) {
+        String btn = tvResultado.getText().toString();
+        btn = btn+"6";
+        tvResultado.setText(btn);
+    }
+
+    public void btNUM1(View view) {
+        String btn = tvResultado.getText().toString();
+        btn = btn+"1";
+        tvResultado.setText(btn);
+    }
+
+    public void btNUM2(View view) {
+        String btn = tvResultado.getText().toString();
+        btn = btn+"2";
+        tvResultado.setText(btn);
+    }
+
+    public void btNUM3(View view) {
+        String btn = tvResultado.getText().toString();
+        btn = btn+"3";
+        tvResultado.setText(btn);
+    }
+
+    public void btNUM0(View view) {
+        String btn = tvResultado.getText().toString();
+        btn = btn+"0";
+        tvResultado.setText(btn);
+    }
+
+    public void tvREsultado(View view) {
+    }
+
+    public void btDivicion(View view) {
+        if(tvResultado.getText().toString() != "") {
+            n1 = Double.parseDouble(tvResultado.getText().toString());
+            opera = '/';
+            tvResultado.setText("");
+        }
+    }
+
+    public void btREsta(View view) {
+        if(tvResultado.getText().toString() != "") {
+            n1 = Double.parseDouble(tvResultado.getText().toString());
+            opera = '-';
+            tvResultado.setText("");
+        }
+    }
+
+    public void btMUltiplicacion(View view) {
+        if(tvResultado.getText().toString() != "") {
+            n1 = Double.parseDouble(tvResultado.getText().toString());
+            opera = '*';
+            tvResultado.setText("");
+        }
+    }
+
+    public void btSUma(View view) {
+        if(tvResultado.getText().toString() != "") {
+            n1 = Double.parseDouble(tvResultado.getText().toString());
+            opera = '+';
+            tvResultado.setText("");
+        }
+    }
+
+    public void btPUnto(View view) {
+        String btn = tvResultado.getText().toString();
+        if(!btn.contains(".")) {
+            btn = btn+".";
+        }
+        tvResultado.setText(btn);
+    }
+
+    public void btIGual(View view) {
+        if (tvResultado.getText().toString() != "") {
+            n2 = Double.parseDouble(tvResultado.getText().toString());
+            if (opera == '+') {
+                total = n1 + n2;
+            } else if (opera == '-') {
+                total = n1 - n2;
+            } else if (opera == '*') {
+                total = n1 * n2;
+            } else {
+                total = n1 / n2;
+            }
+            tvResultado.setText(Double.toString(total));
+            n1 = 0.0;
+            n2 = 0.0;
+        }
+    }
+
+    public void btAC(View view) {
+        tvResultado.setText("");
+        total = 0;
+    }
 }
