@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 tvResultado.setText("");
-                tvOperacion.setText(num + "/");
+                tvOperacion.setText(tvOperacion.getText() + num + "/");
                 num = null;
             }
         });
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 tvResultado.setText("");
-                tvOperacion.setText(num + "*");
+                tvOperacion.setText(tvOperacion.getText() + num + "*");
                 num = null;
             }
         });
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 tvResultado.setText("");
-                tvOperacion.setText(num + "-");
+                tvOperacion.setText(tvOperacion.getText() + num + "-");
                 num = null;
             }
         });
@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 tvResultado.setText("");
-                tvOperacion.setText(num + "+");
+                tvOperacion.setText(tvOperacion.getText() + num + "+");
                 num = null;
             }
         });
