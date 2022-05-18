@@ -12,9 +12,12 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     public ArrayList<Float> Operacion = new ArrayList<Float>();
-    String num;
+    String num = "";
     Button btNUm0, btNUm1, btNUm2, btNUm3, btNUm4, btNUm5, btNUm6, btNUm7, btNUm8, btNUm9, btAC, btCambiodeSigno, Porcentaje, Divicion, btMultiplicacion, btResta, btSuma, btPunto, btIgual;
     TextView tvResultado, tvOperacion;
+    double n1;
+    double total;
+    String opera;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 tvResultado.setText("");
                 tvOperacion.setText("");
-
+                total = 0;
             }
         });
 
@@ -159,8 +162,13 @@ public class MainActivity extends AppCompatActivity {
         btSuma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                opera = "+";
                 tvResultado.setText("");
                 tvOperacion.setText(tvOperacion.getText() + num + "+");
+                if(opera == "+"){
+                    n1 = Double.parseDouble(num);
+                    total = total + n1;
+                }
                 num = "";
             }
         });
@@ -169,15 +177,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 tvResultado.setText(tvResultado.getText()+".");
+                num = num + ".";
             }
         });
 
         btIgual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(opera == "+"){
+                    n1 = Double.parseDouble(num);
+                    total = total + n1;
+                }
+                tvOperacion.setText(tvOperacion.getText() + num);
+                tvResultado.setText(total + " ");
             }
         });
 
     }
+
+    public void Suma(){
+        total = total + n1;
+        }
 
 }
