@@ -50,12 +50,56 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btAC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText());
+
+            }
+        });
+
+        Porcentaje.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+"+");
+                Float numero = Float.valueOf(num);
+                //Operacion.add(numero);
+            }
+        });
+
+        Divicion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+"/");
+                Float numero = Float.valueOf(num);
+                //Operacion.add(numero);
+            }
+        });
+
+        btMultiplicacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+"*");
+                Float numero = Float.valueOf(num);
+                //Operacion.add(numero);
+            }
+        });
+
+        btResta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+"-");
+                Float numero = Float.valueOf(num);
+                //Operacion.add(numero);
+            }
+        });
+
         btSuma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 tvResultado.setText(tvResultado.getText()+"+");
                 Float numero = Float.valueOf(num);
-                Operacion.add(numero);
+                //Operacion.add(numero);
             }
         });
 
