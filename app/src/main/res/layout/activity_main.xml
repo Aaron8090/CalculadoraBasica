@@ -41,7 +41,7 @@
 
     <Button
         android:id="@+id/btAC"
-        android:background="EF7F0F"
+        android:background="#EF7F0F"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -54,7 +54,7 @@
 
     <Button
         android:id="@+id/btCambiodeSigno"
-        android:background="F71313"
+        android:background="#F71313"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -66,7 +66,7 @@
 
     <Button
         android:id="@+id/Porcentaje"
-        android:background="F71313"
+        android:background="#F71313"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -78,7 +78,7 @@
 
     <Button
         android:id="@+id/Division"
-        android:background="F71313"
+        android:background="#F71313"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -90,7 +90,7 @@
 
     <Button
         android:id="@+id/btNum7"
-        android:background="52B937"
+        android:background="#52B937"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -102,7 +102,7 @@
 
     <Button
         android:id="@+id/btNum8"
-        android:background="52B937"
+        android:background="#52B937"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -114,7 +114,7 @@
 
     <Button
         android:id="@+id/btNum9"
-        android:background="52B937"
+        android:background="#52B937"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -126,7 +126,7 @@
 
     <Button
         android:id="@+id/btMultiplicacion"
-        android:background="F71313"
+        android:background="#F71313"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -139,7 +139,7 @@
 
     <Button
         android:id="@+id/btNum4"
-        android:background="52B937"
+        android:background="#52B937"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -152,7 +152,7 @@
 
     <Button
         android:id="@+id/btNum5"
-        android:background="52B937"
+        android:background="#52B937"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -164,7 +164,7 @@
 
     <Button
         android:id="@+id/btNum6"
-        android:background="52B937"
+        android:background="#52B937"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -176,7 +176,7 @@
 
     <Button
         android:id="@+id/btResta"
-        android:background="F71313"
+        android:background="#F71313"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -188,7 +188,7 @@
 
     <Button
         android:id="@+id/btNum1"
-        android:background="52B937"
+        android:background="#52B937"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -200,7 +200,7 @@
 
     <Button
         android:id="@+id/btNum2"
-        android:background="52B937"
+        android:background="#52B937"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -212,7 +212,7 @@
 
     <Button
         android:id="@+id/btNum3"
-        android:background="52B937"
+        android:background="#52B937"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -224,7 +224,7 @@
 
     <Button
         android:id="@+id/btSuma"
-        android:background="F71313"
+        android:background="#F71313"
         android:layout_width="105dp"
         android:layout_height="101dp"
         android:layout_margin="5dp"
@@ -238,7 +238,7 @@
 
     <Button
         android:id="@+id/btNum0"
-        android:background="52B937"
+        android:background="#52B937"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -250,7 +250,7 @@
 
     <Button
         android:id="@+id/btPunto"
-        android:background="F71313"
+        android:background="#F71313"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -262,7 +262,7 @@
 
     <Button
         android:id="@+id/btIgual"
-        android:background="EF7F0F"
+        android:background="#EF7F0F"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
