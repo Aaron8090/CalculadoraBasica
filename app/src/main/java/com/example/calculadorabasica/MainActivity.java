@@ -3,11 +3,16 @@ package com.example.calculadorabasica;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
+    public ArrayList<Float> Operacion = new ArrayList<Float>();
+    String num;
     Button btNUm0, btNUm1, btNUm2, btNUm3, btNUm4, btNUm5, btNUm6, btNUm7, btNUm8, btNUm9, btAC, btCambiodeSigno, Porcentaje, Divicion, btMultiplicacion, btResta, btSuma, btPunto, btIgual;
     TextView tvResultado;
 
@@ -36,6 +41,23 @@ public class MainActivity extends AppCompatActivity {
         btPunto = findViewById(R.id.btPunto);
         btIgual = findViewById(R.id.btIgual);
         tvResultado = findViewById(R.id.tvResultado);
+
+        btNUm0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+"0");
+                num = num + "0";
+            }
+        });
+
+        btSuma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+"+");
+                Float numero = Float.valueOf(num);
+                Operacion.add(numero);
+            }
+        });
 
     }
 
