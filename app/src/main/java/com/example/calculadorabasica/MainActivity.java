@@ -49,7 +49,69 @@ public class MainActivity extends AppCompatActivity {
                 num = num + "0";
             }
         });
-
+        btNUm1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+"1");
+                num = num + "1";
+            }
+        });
+        btNUm2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+"2");
+                num = num + "2";
+            }
+        });
+        btNUm3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+"3");
+                num = num + "3";
+            }
+        });
+        btNUm4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+"4");
+                num = num + "4";
+            }
+        });
+        btNUm5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+"5");
+                num = num + "5";
+            }
+        });
+        btNUm6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+"6");
+                num = num + "6";
+            }
+        });
+        btNUm7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+"7");
+                num = num + "7";
+            }
+        });
+        btNUm0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+"8");
+                num = num + "8";
+            }
+        });
+        btNUm9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResultado.setText(tvResultado.getText()+"9");
+                num = num + "9";
+            }
+        });
         btAC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
