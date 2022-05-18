@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                 num = num + "7";
             }
         });
-        btNUm0.setOnClickListener(new View.OnClickListener() {
+        btNUm8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 tvResultado.setText(tvResultado.getText()+"8");
@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 tvResultado.setText("");
                 tvOperacion.setText(tvOperacion.getText() + num + "/");
-                num = null;
+                num = "";
             }
         });
 
@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 tvResultado.setText("");
                 tvOperacion.setText(tvOperacion.getText() + num + "*");
-                num = null;
+                num = "";
             }
         });
 
@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 tvResultado.setText("");
                 tvOperacion.setText(tvOperacion.getText() + num + "-");
-                num = null;
+                num = "";
             }
         });
 
@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 tvResultado.setText("");
                 tvOperacion.setText(tvOperacion.getText() + num + "+");
-                num = null;
+                num = "";
             }
         });
 
